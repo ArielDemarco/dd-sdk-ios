@@ -10,7 +10,7 @@ import DatadogInternal
 /// An interface for enabling crash reporting feature in Datadog SDK.
 ///
 /// The SDK calls each API on a background thread and succeeding calls are synchronized.
-internal protocol CrashReportingPlugin: AnyObject {
+public protocol CrashReportingPlugin: AnyObject {
     /// Reads unprocessed crash report if available.
     /// - Parameter completion: the completion block called with the value of `DDCrashReport` if a crash report is available
     /// or with `nil` otherwise. The value returned by the receiver should indicate if the crash report was processed correctly (`true`)
