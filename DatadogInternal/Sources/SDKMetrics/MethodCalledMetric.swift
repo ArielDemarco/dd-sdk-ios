@@ -22,4 +22,6 @@ public enum MethodCalledMetric {
     public static let isSuccessful = "is_successful"
     /// The key for execution time.
     public static let executionTime = "execution_time"
+    /// The first sample rate applied.
+    public static let headSampleRate = "headSampleRate"
 }
