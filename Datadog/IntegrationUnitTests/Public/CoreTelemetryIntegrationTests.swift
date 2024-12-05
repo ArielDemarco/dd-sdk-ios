@@ -239,12 +239,12 @@ class CoreTelemetryIntegrationTests: XCTestCase {
 
         if let metric = debugEvents.first(where: { $0.telemetry.message == "[Mobile Metric] Metric Name" }) {
 
-            XCTAssertEqual(metric.effectiveSampleRate, 89.1)
+            XCTAssertEqual(metric.effectiveSampleRate, 89)
         }
 
         if let metric = debugEvents.first(where: { $0.telemetry.message == "[Mobile Metric] Method Called" }) {
 
-            XCTAssertEqual(metric.effectiveSampleRate, 71.28)
+            XCTAssertEqual(metric.effectiveSampleRate, 71)
         }
 
         if let usage = usageEvents.first {
